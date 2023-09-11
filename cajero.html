@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cajero.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
+    <title>Cajero</title>
+</head>
+<body>
+    <label>BIENVENIDO A TU CAJERO</label>
+    <label class="divsesiontexto">El monto actual en cuenta es de $</label>
+    <label id="sesiondiv" class="divsesion"></label>
+    
+
+<!--<form>
+       
+    <button type="button" onclick="mostrarDeposito()" id="deposito">Depositele joven</button>
+    <button type="button" id="retiro" onclick="mostrarRetiro()">Retirele pa las caguamas</button>
+</form>-->
+
+
+<div class="divinputmonto">
+    <div class="ceros">Ingrese el monto que desea retirar o depositar</div>
+</div>
+<div class="divinputmonto">
+    <input type="number" id="monto" class="inputmonto"><div class="ceros">.00</div>
+</div>
+
+
+<div class="divbotonaceptar">
+    <button type="button" id="botonaceptar" onclick="depositar()" class="botonaceptar">Depositar</button>
+    <button type="button" id="botonaceptar" onclick="retirar()" class="botonaceptar">Retirar</button>
+</div>
+
+<div class="divfinalmontocampo">
+    <label id="montofinal" class="campomontofinal"></label>
+</div>
+
+<div class="botoningresar" id="ingresa">
+    <button type="button" class="inputboton" onclick="mostrarinicio()">Salir</button>
+</div>
+
+
+
+
+<script src="cajero.js"></script>
+
+
+</body>
+</html>
